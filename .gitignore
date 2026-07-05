@@ -1,0 +1,25 @@
+# --- Terraform ---
+
+# Local .terraform working directories (download providers, etc.)
+**/.terraform/*
+
+# State files -- NEVER commit. May contain secrets in plain text.
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files -- may hold passwords, keys, secrets.
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Saved plan output
+*.tfplan
+
+# CLI config that may contain credentials
+.terraformrc
+terraform.rc
