@@ -23,3 +23,6 @@ crash.*.log
 # CLI config that may contain credentials
 .terraformrc
 terraform.rc
+
+# Module-level lock files. Only the root module's lock file matters.
+modules/*/.terraform.lock.hcl
